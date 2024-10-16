@@ -41,7 +41,7 @@ nav{
 	color:#E9BD8C;
 }
 section{
-	padding: 80px 18%;
+	padding: 80px 10%;
 }
 .home{
 	width: 100%;
@@ -79,7 +79,7 @@ section{
 .home-btn{
 	display: inline-block;
 	font-size: 16px;
-	padding: 15px 30px;
+	padding: 20px 30px;
 	background: brown;
 	color: white;
 	border-radius: 4px;
@@ -90,7 +90,7 @@ section{
 	transform: scale(1.1);
 }
 nav.sticky{
-	background:url(/img/BG.png);;
+	background:url(/img/BG.png);
 	padding: 10px 18%;
 	box-shadow: rgba(245, 246, 249, 0.1) 0px 10px 10px -10px;
 }
@@ -154,16 +154,8 @@ nav.sticky{
 	right: 6px;
 	cursor: pointer;
 }
-.news-text h2{
-	font-size:xx-large;
-	margin-bottom: 5px;
-}
 
-.news-text p{
-	font-size: var(--p-font);
-	color: var(--second-color);
-	line-height: 30px;
-}
+
 
 /**********************************************************************Footer CSS*************************************************************/ 
 #footertop{
@@ -194,11 +186,13 @@ footer{
 	color:#E9BD8C ;
 	position: relative;
 }
-.list h4{
+.list h4, .list-food h4{
 	color: #E9BD8C;
 	font-size: 2rem;
 }
-
+.list-food{
+	margin-left: 10rem;
+}
 .list ul li a{
 	color: white;
 	font-size:1.1rem;
@@ -216,24 +210,24 @@ footer{
 }
 .first-list h4{
 	padding-right: 30px;
-	margin-left: rem;
 }
+
 .first-list .social a{
-	height: 40px;
-	width: 40px;
+	height: 50px;
+	width:50px;
 	background: #E9BD8C;
 	color: black;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 21px;
+	font-size: 39px;
 	border-radius: 15px;
 	transition: .3s;
 	margin-right: 20px;
 	
 }
 .first-list  .social{
-	margin-left: 30rem;
+	margin-left: 40rem;
 }
 hr{
 	border: none;
@@ -243,20 +237,26 @@ hr{
 	width:100%;
 	margin: 20px auto;
 }
-#lastlist ul li{
+.listfood {
 	display: flex;
 	align-items: center;
-	padding: 10px;
+	margin-top: 10px;
 	
 }
-#lastlist{
-	margin-left: 10rem;
-}
-#lastlist ul li p{
+.listfood span{
 	color: #E9BD8C;
-	padding: 10px;
+}
+.food-text{
+	margin-left: 20px;
+}
+.food-text p{
+	color: white;
 }
 
+.social {
+	display : flex ; 
+	align-items:center;
+}
 .first-list .social a:hover{
 	transform: scale(1.1);
 }
@@ -270,18 +270,17 @@ hr{
 	letter-spacing: 2px;
 }
 /****************************************************Menu CSS**********************************************************************/
-header{
+/* header{
 	background-image: url(/img/BG.png);
-}
+} */
 #nav-menu{
 	background-image: url(/img/BG.png);
+	background-position: right;
 }
 #home-menu{
 	width: 100%;
 	margin-top: 7rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	
 }
 
 .home-text h2{
@@ -290,5 +289,105 @@ header{
 	color: brown;
     font-family: 'Sansita Swashed';
 	letter-spacing: 4px;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/********************cards Top Products**********************/
+.package-content{
+	display: grid;
+	grid-template-columns: repeat(3,400px);
+	grid-gap: 1rem;
+	align-items: center;
+	
+}
+.box{
+	background-image: url(../img/bg-food.png);
+	width: calc(95/3);
+	min-height: 400px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	cursor: pointer;
+	
+}
+.box img{
+	width: 100%;
+	height: 70%;
+	padding: 5rem;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.detail-food img{
+	width: 50%;
+	margin-left: 5rem;
+	padding-bottom: 20px;
+}
+.detail-food{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+.detail-food h3{
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+	padding-left: 30px;
+} 
+
+.dest-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.location {
+	color: #ffffff;
+	margin-left: 1rem;
+	margin-bottom: 3rem;
+	display: flex;
+	flex-direction: row;
+	
+}
+.location p{
+	padding-left: 15px;
+	font-size: large;
+}
+.location button {
+	background-color: brown;
+	border-radius: 5px;
+	color: white;
+	border: none;
+	width: 70px;
+	height: 39px;
+	font-size: medium;
+	margin-left: 8rem;
+	transition: ease.5s;
+	
+}
+.location button:hover{
+	transform: scale(1.2);
+}
+
+/**************************************************************Entrées******************************/
+.boxentrees{
+	background-color:rgb(147 60 36 /49% );
+	
+}
+
+
+.Entrées-text h2{
+	margin-top: 5rem;
+}
+.Entrées{
+	background-color: #E9BD8C;
+}
+.Entrées a{
+	width: 100%;
+	height: auto;
 }
