@@ -276,3 +276,19 @@ header{
 #nav-menu{
 	background-image: url(/img/BG.png);
 }
+#home-menu{
+	width: 100%;
+	margin-top: 7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home-text h2{
+	font-size: 3rem;
+	line-height: 1.2;
+	color: brown;
+    font-family: 'Sansita Swashed';
+	letter-spacing: 4px;
+	margin-bottom: 20px;
+}
