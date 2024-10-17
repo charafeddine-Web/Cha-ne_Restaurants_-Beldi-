@@ -6,8 +6,6 @@
 	text-decoration: none;
 	list-style: none;
 }
-
-
 /*****************************************************Header-nav-section CSS***********************************************************************/
 nav{
 	position: fixed;
@@ -17,7 +15,7 @@ nav{
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding: 30px 18%;
 	background:transparent;
 }
@@ -275,8 +273,20 @@ hr{
 } */
 #nav-menu{
 	background-image: url(/img/BG.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity:95%;
 	background-position: right;
 }
+#nav-menu {
+	display: flex;
+	justify-content: start;
+	
+}
+#nav-menu .navbar{
+	margin-left: 15rem;
+}
+
 #home-menu{
 	width: 100%;
 	margin-top: 7rem;
@@ -380,7 +390,6 @@ hr{
 	
 }
 
-
 .Entrées-text h2{
 	margin-top: 5rem;
 }
@@ -390,4 +399,99 @@ hr{
 .Entrées a{
 	width: 100%;
 	height: auto;
+}
+
+
+
+/**********************************Contact**********************************************/
+
+
+#nav-contact{
+	background-image: url(/img/BG.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity:95%;
+	width: 100%;
+	background-position: right;
+}
+#nav-contact {
+	display: flex;
+	justify-content: start;
+	
+}
+#nav-contact .navbar{
+	margin-left: 15rem;
+}
+.contact-text h2{
+	
+	font-size: 3rem;
+	line-height: 1.2;
+	color: rgb(0, 0, 0);
+    font-family: 'Sansita Swashed';
+	letter-spacing: 4px;
+	margin-bottom: 50px;
+	text-align: center;
+	margin-top: 3rem;
+}
+#contact{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+}
+#info{
+	width: 360px;
+	height: 49px;
+	line-height: 1.3rem;
+}
+#form{
+	border: 1px solid rgb(185, 185, 185);
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 1px 5px 8px 1px rgb(128, 50, 50);
+}
+
+#form form input{
+	border: none;
+	border-radius: 5px;
+	background-color: hsl(0, 0%, 91%);
+	margin: 10px;
+	padding: 10px;
+	width: 222px;
+	height: 40px;
+	outline: none;
+}
+#form form input ::placeholder{
+	padding-left: 20px;
+}
+#form form textarea{
+	border: none;
+	border-radius: 5px;
+	background-color: hsl(0, 0%, 91%);
+	margin: 10px;
+	padding: 10px;
+	width: 222px;
+	height: 150px;
+	outline: none;
+}
+#form form button{
+	background-color: brown;
+	border-radius: 25px;
+	border: none;
+	width: 465px;
+	height: 45px;
+	color: white;
+	margin-top: 30px;
+	margin-left: 10px;
+}
+#list-info .c1{
+	display: flex;
+	flex-direction: row;
+	
+}
+#list-info{
+	margin-top: 30px;;
+}
+#form form button:hover{
+	background-color: rgb(200, 88, 88);
 }
