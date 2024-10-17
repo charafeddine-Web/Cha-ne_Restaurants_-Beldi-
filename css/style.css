@@ -162,7 +162,7 @@ nav.sticky{
 	background-repeat: no-repeat;
 }
 footer{
-	padding: 80px 18%;
+	padding: 80px 12%;
 }
 .main{
 	display: flex;
@@ -171,7 +171,6 @@ footer{
 .maintop{
 	display: flex;
 	flex-wrap: wrap;
-	
 	margin-bottom: 3rem;
 }
 
@@ -387,12 +386,74 @@ hr{
 /**************************************************************Entrées******************************/
 .boxentrees{
 	background-color:rgb(147 60 36 /49% );
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 300px;
+	padding: 30px;
+	border-radius: 5px;
+}
+.package-content2{
+	display: flex;
+	gap:20px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+#boxeentre2{
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	
 }
-
+#parent-entre{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .Entrées-text h2{
 	margin-top: 5rem;
+	font-size: 3rem;
+	line-height: 1.2;
+	color: brown;
+    font-family: 'Sansita Swashed';
+	letter-spacing: 4px;
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+ .detail-entree{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 20px;
+	color: white;
+}
+.detail-entree img{
+	width: 15%;
+	background-color: rgb(147 60 36 /49% );
+	border: 1px solid black;
+	border-radius: 50px;
+	padding: 0px;
+
+}
+.detail-entree p{
+	text-decoration: underline;
+}
+.detail-entree button{
+	padding:10px;
+	background-color: brown;
+	border-radius: 5px;
+	margin-left: 2rem;
+	width: 4rem;
+	border: none;
+	color: white;
+}
+
 .Entrées{
 	background-color: #E9BD8C;
 }
@@ -400,13 +461,80 @@ hr{
 	width: 100%;
 	height: auto;
 }
+/***************************************Piza*************************************************/
+.parent-pizaa{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 400px;
+	padding: 50px;
+	border-radius: 5px;
+}
+.package-content3{
+	display: flex;
+	gap:20px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.boxpizza{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 20px;
+	border-radius: 15px ;
+	background-color: rgb(219, 219, 219);
+	transition: ease-in .3s;
+}
+.boxpizza:hover{
+	transform: scale(1.1);
+	background-color: rgb(219, 72, 72);
+}
 
+.boxpizza p{
+	text-decoration: underline;
+	font-size: larger;
+}
+.boxpizza button{
+	font-size: larger;
+	border-radius: 10px;
+	padding: 5px;
+	color: white;
+	background-color: black;
+	border: none;
+}
+/***************************************Explore More**********************************/
+.explore-a{
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid black;
+	
+}
+.explore-a a{
+	padding-left: 40px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	font-size: large;
+	font-weight: bold;
+	color: rgb(87, 87, 87);
+}
+.explore-a a:hover{
+	color: brown;
+}
+.explore-a a:first-child{
+	text-decoration: underline brown 3px;
+}
 
-
+.menu-explore{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
 /**********************************Contact**********************************************/
-
-
-#nav-contact{
+#nav-contact {
 	background-image: url(/img/BG.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -419,7 +547,7 @@ hr{
 	justify-content: start;
 	
 }
-#nav-contact .navbar{
+#nav-contact  .navbar{
 	margin-left: 15rem;
 }
 .contact-text h2{
@@ -489,9 +617,124 @@ hr{
 	flex-direction: row;
 	
 }
+.c1 p{
+	margin-left: 15px;
+}
 #list-info{
 	margin-top: 30px;;
 }
 #form form button:hover{
 	background-color: rgb(200, 88, 88);
+}
+
+
+/*************************A propos***************************************************/
+
+#apropos-nav{
+	background-image: url(/img/BG.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity:95%;
+	width: 100%;
+	background-position: right;
+}
+#apropos-nav{
+	display: flex;
+	justify-content: start;
+	
+}
+#apropos-nav .navbar{
+	margin-left: 15rem;
+}
+
+#about{
+	background-image: url(/img/about.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+	margin-top: 8.9rem;
+	
+}
+.apropos-text{
+	text-align: center;
+	width: 100%;
+	padding-top: 10rem;
+	color: white;
+	line-height: 1.5;
+	
+}
+.apropos-text p{
+	opacity: 70%;
+}
+.apropos-text h2{
+	font-size: 3rem;
+	color: white;
+    font-family: 'Sansita Swashed';
+	letter-spacing: 4px;
+	
+}
+
+.apropos-text button{	
+	color: white;
+font-size: larger;
+	margin-bottom: 7rem;
+	border: none;
+	background-color: brown;
+	padding: 15px;
+	padding-left:40px;
+	padding-right: 40px;
+	margin-top: 30px;
+	border-top-left-radius:8px ;
+	border-bottom-left-radius:8px ;
+}
+.apropos-text button:hover{
+	background-color: rgb(255, 103, 103);
+}
+.info-about{
+	display: flex;
+
+}
+#parent{
+	margin-bottom: 8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#parent h2{
+	font-size: 3rem;
+	color: brown;
+    font-family: 'Sansita Swashed';
+	letter-spacing: 4px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+#parent h3{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	font-size: 3rem;
+	color: brown;
+    font-family: 'Sansita Swashed';
+	letter-spacing: 4px;
+	text-align: center;
+	margin-bottom: 40
+}
+#parent h2{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+.info-about p{
+	color: rgb(43, 40, 40);
+	font-family: 'Sansation Light';
+	font-size: xx-large;
+	line-height: 2rem;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	
+	
+}
+.info-about img{
+	width: 658px;
+	padding-left: 20px;
 }
