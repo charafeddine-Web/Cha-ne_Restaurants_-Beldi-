@@ -456,7 +456,9 @@ hr{
 	border: none;
 	color: white;
 }
-
+.detail-entree button:hover{
+	background-color: rgb(250, 121, 121);
+}
 /***************************************Piza*************************************************/
 .parent-pizaa{
 	display: flex;

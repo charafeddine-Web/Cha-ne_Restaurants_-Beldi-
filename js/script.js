@@ -27,7 +27,7 @@ function openExplore(evt, foodname) {
     if (foodname === "Cake") {
         const cakeElement = document.getElementById(foodname);
         if (cakeElement) {
-            cakeElement.style.display = "block"; 
+            cakeElement.style.display = "block";
         }
     }
     evt.currentTarget.className += " active";
