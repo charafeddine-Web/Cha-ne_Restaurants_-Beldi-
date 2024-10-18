@@ -164,7 +164,7 @@ nav.sticky{
 
 /**********************************************************************Footer CSS*************************************************************/ 
 #footertop{
-	background: url(../img/Footer.png);
+	background-image: url(../img/Footer.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
