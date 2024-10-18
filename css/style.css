@@ -77,7 +77,7 @@ section{
 .home-btn{
 	display: inline-block;
 	font-size: 16px;
-	padding: 20px 30px;
+	padding: 15px 30px;
 	background: brown;
 	color: white;
 	border-radius: 4px;
@@ -92,31 +92,33 @@ nav.sticky{
 	padding: 10px 18%;
 	box-shadow: rgba(245, 246, 249, 0.1) 0px 10px 10px -10px;
 }
-.sticky .navbar a{
-	color: white;
-} 
-.sticky .navbar a:hover{
+
+/* .sticky .navbar a:hover{
 	color:#E9BD8C;
-}
+} */
 .text h2{
 	font-size: white;
 	line-height: 1.1;
 }
 #asideitem{
 	background-color: #ffffff;
-	color: black;
+	color: rgb(0, 0, 0);
 	padding: 5rem;
 	display: block;
 	text-align: center;
-	line-height: 2rem;
+	line-height: 1.5rem;
 	flex-direction: row;
+}
+#asideitem p{
+	opacity: 70%;
 }
 #asideitem h1{
 	color: brown;
 	font-family: 'Sansita Swashed';
 	font-size:xx-large;
-	line-height: 1.1;
-	
+	line-height: 1.5;
+	letter-spacing: 3px;
+	padding-bottom: 10px;
 }
 .newsletter{
 	display: flex;
@@ -152,8 +154,13 @@ nav.sticky{
 	right: 6px;
 	cursor: pointer;
 }
-
-
+.newsletter form input:last-child:hover{
+	background-color: rgb(210, 81, 81);
+	cursor: pointer;
+}
+.news-text h2{
+	font-size: xx-large;
+}
 
 /**********************************************************************Footer CSS*************************************************************/ 
 #footertop{
@@ -328,7 +335,7 @@ hr{
 	width: 100%;
 	height: 70%;
 	padding: 5rem;
-	padding-top: 0;
+	padding-top: 0px;
 	padding-bottom: 0;
 }
 .detail-food img{
@@ -401,19 +408,16 @@ hr{
 	flex-wrap: wrap;
 }
 #boxeentre2{
-	margin-top: 30px;
+	background-color:rgb(147 60 36 /49% );
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	width: 300px;
+	padding: 30px;
+	border-radius: 5px;
 	
 }
-#parent-entre{
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
 .Entrées-text h2{
 	margin-top: 5rem;
 	font-size: 3rem;
@@ -439,7 +443,6 @@ hr{
 	border: 1px solid black;
 	border-radius: 50px;
 	padding: 0px;
-
 }
 .detail-entree p{
 	text-decoration: underline;
@@ -454,13 +457,6 @@ hr{
 	color: white;
 }
 
-.Entrées{
-	background-color: #E9BD8C;
-}
-.Entrées a{
-	width: 100%;
-	height: auto;
-}
 /***************************************Piza*************************************************/
 .parent-pizaa{
 	display: flex;
@@ -500,39 +496,82 @@ hr{
 }
 .boxpizza button{
 	font-size: larger;
-	border-radius: 10px;
-	padding: 5px;
+	border-radius: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
 	color: white;
 	background-color: black;
 	border: none;
 }
 /***************************************Explore More**********************************/
-.explore-a{
-	display: flex;
-	justify-content: center;
-	border-bottom: 1px solid black;
-	
-}
-.explore-a a{
-	padding-left: 40px;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 50px;
-	font-size: large;
-	font-weight: bold;
-	color: rgb(87, 87, 87);
-}
-.explore-a a:hover{
-	color: brown;
-}
-.explore-a a:first-child{
-	text-decoration: underline brown 3px;
+#explore {
+    margin-top: 5rem;
 }
 
-.menu-explore{
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+.tab {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(224, 224, 224);
 }
+
+.tab button.active {
+    background-color: #ffffff;
+}
+
+.tab button {
+    padding-left: 40px;
+    background-color: white;
+    border: none;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(87, 87, 87);
+    line-height: 3rem;
+}
+
+.tab button:hover {
+    text-decoration: underline brown 3px;
+}
+
+.tabcontent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    display: none;
+}
+
+.tabcontent.active {
+    display: flex; 
+}
+
+.tabcontent img {
+    max-width: calc(33.33% - 20px); 
+    width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+	border-radius: 15px;
+}
+
+
+
+
+/***********************************************Featured************************************************/
+
+#Featured{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	gap:20px;
+	
+}
+
 /**********************************Contact**********************************************/
 #nav-contact {
 	background-image: url(/img/BG.png);
@@ -551,7 +590,6 @@ hr{
 	margin-left: 15rem;
 }
 .contact-text h2{
-	
 	font-size: 3rem;
 	line-height: 1.2;
 	color: rgb(0, 0, 0);
@@ -565,7 +603,6 @@ hr{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	
 }
 #info{
 	width: 360px;
@@ -737,4 +774,5 @@ font-size: larger;
 .info-about img{
 	width: 658px;
 	padding-left: 20px;
+	padding-right: 20px;
 }
