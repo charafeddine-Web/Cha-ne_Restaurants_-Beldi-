@@ -1,1 +1,2 @@
-Lien :https://charafeddinetbibzat-web.atlassian.net/jira/software/projects/AWBS/list?atlOrigin=eyJpIjoiYzk4MzBlMDAzMjVhNGQwZjlmNzdlNTcwOTQyYjRhOWYiLCJwIjoiaiJ9
+Lien JIRA : https://charafeddinetbibzat-web.atlassian.net/jira/software/projects/AWBS/list?atlOrigin=eyJpIjoiYzk4MzBlMDAzMjVhNGQwZjlmNzdlNTcwOTQyYjRhOWYiLCJwIjoiaiJ9
+Lien Figma :https://www.figma.com/design/ffRq4AmZXeim0XfWi2BtI6/BELDI_Statique?node-id=0-1&t=Nf3Na47MVOhob4mb-1
